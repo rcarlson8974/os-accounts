@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+# OS-specific
+.DS_Store
+
+# IDE junk
+.idea/*
+*.iml
+.project
+
+# maven
+.mvn/*
+mvn*
+lib/*
