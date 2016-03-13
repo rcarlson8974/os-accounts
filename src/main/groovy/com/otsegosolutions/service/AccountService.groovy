@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service
 class AccountService {
 
     String test()  {
-        return "foo"
+        return "foo: ${new Date()}"
     }
 }
