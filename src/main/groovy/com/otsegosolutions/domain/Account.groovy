@@ -1,10 +1,8 @@
-package com.otsegosolutions.com.otsegosolutions.domain
+package com.otsegosolutions.domain
 
-//import org.springframework.data.annotation.Id
 
 class Account {
 
-//    @Id
     Long id
     String accountDesc
     String userId

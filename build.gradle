@@ -27,7 +27,6 @@ repositories {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-data-mongodb")
-//    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
     compile "org.codehaus.groovy:groovy-all:2.3.10"
 //    compile "org.mongodb:mongo-java-driver:${mongoDriverVersion}"
     testCompile("org.springframework.boot:spring-boot-starter-test")
