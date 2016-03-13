@@ -11,3 +11,5 @@
 .mvn/*
 mvn*
 lib/*
+
+target
