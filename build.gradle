@@ -13,6 +13,7 @@ buildscript {
 
 apply plugin: 'groovy'
 apply plugin: 'spring-boot'
+apply plugin: 'idea'
 
 jar {
     baseName = 'os-accounts'

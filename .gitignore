@@ -5,11 +5,11 @@
 # IDE junk
 .idea/*
 *.iml
-.project
 
-# maven
-.mvn/*
-mvn*
+# gradle
+.gradle
+gradle
+
+# build
 lib/*
-
 target
