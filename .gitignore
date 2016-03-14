@@ -3,12 +3,18 @@
 .DS_Store
 
 # IDE junk
-.idea/*
+.idea
 *.iml
+*.ipr
+*.iws
 
 # gradle
 .gradle
 gradle
+
+# maven
+mvnw*
+.mvn
 
 # build
 lib/*
