@@ -12,7 +12,7 @@ class AccountService {
     AccountRepository repository
 
     List<Account> findAll()  {
-//        return repository.findAll()
-        return [new Account(accountDesc: 'test')]
+        return repository.findAll()
+//        return [new Account(accountDesc: 'test')]
     }
 }
