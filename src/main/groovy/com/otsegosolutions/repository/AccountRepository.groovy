@@ -7,4 +7,5 @@ import org.springframework.data.mongodb.repository.MongoRepository
 interface AccountRepository extends MongoRepository<Account, ObjectId>{
 
     List<Account> findAll()
+    Account findByAccountDesc(String accountDesc)
 }

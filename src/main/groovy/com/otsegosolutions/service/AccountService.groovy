@@ -11,8 +11,11 @@ class AccountService {
     @Autowired
     AccountRepository repository
 
-    List<Account> findAll()  {
+    List<Account> findAll() {
         return repository.findAll()
-//        return [new Account(accountDesc: 'test')]
+    }
+
+    Account findByAccountDesc(String accountDesc) {
+        return repository.findByAccountDesc(accountDesc)
     }
 }
