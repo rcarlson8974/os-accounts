@@ -15,7 +15,15 @@ class AccountService {
         return repository.findAll()
     }
 
-    Account findByAccountDesc(String accountDesc) {
-        return repository.findByAccountDesc(accountDesc)
+    Account save(Account account) {
+        return repository.save(account)
     }
+
+    void delete(Integer id) {
+        repository.delete(id)
+    }
+
+//    Account findByAccountDesc(String accountDesc) {
+//        return repository.findByAccountDesc(accountDesc)
+//    }
 }

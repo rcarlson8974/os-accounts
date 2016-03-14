@@ -5,12 +5,15 @@ import org.bson.types.ObjectId
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 
-@ToString(excludes = 'id')
+@ToString
 @Document(collection = "accounts")
 class Account {
 
     @Id
-    ObjectId id
+    ObjectId mongoId
+//    @GeneratedValue(strategy=GenerationType.IDENTITY)
+
+    Integer id
     String accountDesc
     String userId
     String passwordHint
