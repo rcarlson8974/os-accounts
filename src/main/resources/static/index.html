@@ -8,37 +8,46 @@
     <div class="page-header">
         <h1>Accounts</h1>
     </div>
-    <div class="alert alert-info" role="alert" ng-hide="accounts && accounts.length > 0">
-        There are no accounts yet.
-    </div>
-    <form class="form-horizontal" role="form" ng-submit="addAccount(newAccount)">
-        <div class="form-group" ng-repeat="account in accounts">
-            <div class="checkbox col-xs-9">
-                <label>
-                    <input type="checkbox" ng-model="account.checked" ng-change="updateAccount(account)"/> {{account.accountDesc}}
-                </label>
-            </div>
-            <div class="col-xs-3">
-                <button class="pull-right btn btn-danger" type="button" title="Delete"
-                        ng-click="deleteAccount(account)">
-                    <span class="glyphicon glyphicon-trash"></span>
-                </button>
-            </div>
-        </div>
-        <hr />
-        <div class="input-group">
-            <input type="text" class="form-control" ng-model="newAccount" placeholder="Enter the description..." />
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="submit" ng-disabled="!newAccount" title="Add">
-                <span class="glyphicon glyphicon-plus"></span>
-            </button>
-          </span>
-        </div>
-    </form>
+
+    <table datatable="" dt-options="dtOptions" dt-columns="dtColumns" class="row-border hover table table-striped table-bordered"></table>
+
+
+    <!--<div class="alert alert-info" role="alert" ng-hide="accounts && accounts.length > 0">-->
+        <!--There are no accounts yet.-->
+    <!--</div>-->
+    <!--<form class="form-horizontal" role="form" ng-submit="addAccount(newAccount)">-->
+        <!--<div class="form-group" ng-repeat="account in accounts">-->
+            <!--<div class="checkbox col-xs-9">-->
+                <!--<label>-->
+                    <!--<input type="checkbox" ng-model="account.checked" ng-change="updateAccount(account)"/> {{account.accountDesc}}-->
+                <!--</label>-->
+            <!--</div>-->
+            <!--<div class="col-xs-3">-->
+                <!--<button class="pull-right btn btn-danger" type="button" title="Delete"-->
+                        <!--ng-click="deleteAccount(account)">-->
+                    <!--<span class="glyphicon glyphicon-trash"></span>-->
+                <!--</button>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<hr />-->
+        <!--<div class="input-group">-->
+            <!--<input type="text" class="form-control" ng-model="newAccount" placeholder="Enter the description..." />-->
+          <!--<span class="input-group-btn">-->
+            <!--<button class="btn btn-default" type="submit" ng-disabled="!newAccount" title="Add">-->
+                <!--<span class="glyphicon glyphicon-plus"></span>-->
+            <!--</button>-->
+          <!--</span>-->
+        <!--</div>-->
+    <!--</form>-->
 </div>
+
+<script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="./bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="./bower_components/angular-datatables/dist/angular-datatables.min.js"></script>
 <script type="text/javascript" src="./bower_components/angular-resource/angular-resource.min.js"></script>
 <script type="text/javascript" src="./bower_components/lodash/dist/lodash.min.js"></script>
+<script type="text/javascript" src="./bower_components/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
 <script type="text/javascript" src="./app/app.js"></script>
 <script type="text/javascript" src="./app/controllers.js"></script>
 <script type="text/javascript" src="./app/services.js"></script>
